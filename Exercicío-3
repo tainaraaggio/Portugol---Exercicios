@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+    real combustivel,totalcombustivel,totalgasto
+    inteiro kmrodados, litros
+    escreva ("Digite qual combustível usou para abastecer, Digite 1- para gasolina e 2- para etanol:")
+    leia(combustivel)
+  se (combustivel==1){
+      escreva ("Digite a quantidade de litros de gasolina:")
+  leia (litros)
+  escreva ("Digite a km percorrida:")
+  leia (kmrodados)
+  totalcombustivel=kmrodados/litros
+  totalgasto=litros*6.59
+  escreva ("Você andou:  ",kmrodados, "km.  Com " ,combustivel,", litros. E gastou: R$:",totalcombustivel)}
+  senao se (combustivel==2)
+  escreva ("Digite a quantidade de litros de etanol:")
+  leia (litros)
+  escreva ("Digite a km percorrida:")
+  leia (kmrodados)
+  totalcombustivel=kmrodados/litros
+  totalgasto=litros*4.08
+  escreva ("Você andou:  ",kmrodados, "km.  Com " ,combustivel,", litros. E gastou: R$:",totalcombustivel)}
+
+  }
