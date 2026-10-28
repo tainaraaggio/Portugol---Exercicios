@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    real n1, n2, n3, media, soma
+    cadeia nome
+    escreva("Insira o nome do aluno:")
+    leia(nome)
+    escreva("Insira a nota da prova 01:")
+    leia(n1)
+    escreva("Insira a nota da prova 02:")
+    leia(n2)
+    escreva("Insira a  nota da prova 03:")
+    leia(n3)
+    soma=n1+n2+n3
+    media=soma/3
+    escreva ("Nome do aluno:",nome,"\nA média do aluno é:" ,media)
+      }
+}
