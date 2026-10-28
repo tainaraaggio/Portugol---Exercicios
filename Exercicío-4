@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    cadeia nomevendedor
+    real salario, totalvendas, comissao, total
+    escreva("Digite seu nome:")
+    leia(nomevendedor)
+    escreva("Digite seu salário:")
+    leia(salario)
+    escreva("Digite o total de vendas feito no mês em dinheiro:")
+    leia(totalvendas)
+    comissao=totalvendas*0.15
+
+    total=comissao+salario
+    escreva ("Nome do vendedor: ", nomevendedor,"\nSalário mensal R$:",salario,"\nSalário mensal com comissão R$: \n",total)
+  }
+}
