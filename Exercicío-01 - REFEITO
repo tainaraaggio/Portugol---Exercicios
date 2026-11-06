@@ -1,0 +1,35 @@
+programa{
+//Faça um algoritmo que receba dois números e exiba o resultado da sua soma.
+
+  inclua biblioteca Tipos --> t 
+  inclua biblioteca Util --> ut
+
+
+  funcao inicio() {
+
+    cadeia entrada_1, entrada_2
+    inteiro num1, num2, soma, contador=1
+    logico teste_validar
+
+    faca{
+      escreva("Digite um número: ")
+      leia(entrada_1)
+      escreva("Digite um número ")
+      leia(entrada_2)
+    
+      se(t.cadeia_e_inteiro(entrada_1, 10) e t.cadeia_e_inteiro(entrada_2, 10)){
+       num1 = t.cadeia_para_inteiro(entrada_1, 10)
+       num2 = t.cadeia_para_inteiro(entrada_2, 10)
+       teste_validar = verdadeiro
+       soma = num1 + num2
+       escreva(num1 , "  + ", num2 , " = ", soma )
+      }
+        senao{
+         escreva("Erro: Você digitou letras ou caracteres inválidos.\n\n")
+         teste_validar = falso
+        } 
+    }      
+          enquanto (nao teste_validar)
+      
+  }
+}
